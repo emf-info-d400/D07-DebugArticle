@@ -2,8 +2,8 @@ package models;
 
 public class Article {
 
-    public static final String SEPARATOR = "\t";
-    public static final String FORMAT_PRIX = "##,##0.00 CHF";
+    public final static String SEPARATOR = "\t";
+    public final static String FORMAT_PRIX = "##,##0.00 CHF";
 
     private String designation;
     private double prix;
@@ -21,6 +21,6 @@ public class Article {
 
     public Categorie getCategorie() {
         return categorie;
-    }    
-    
+    }
+
 }

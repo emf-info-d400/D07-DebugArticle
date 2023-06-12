@@ -1,6 +1,7 @@
 package models;
 
 public class Categorie {
+    
     private String libelle;
 
     public Categorie(String libelle) {
