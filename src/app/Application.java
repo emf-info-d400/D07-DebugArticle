@@ -4,7 +4,7 @@ import models.Categorie;
 import models.Article;
 
 public class Application {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         // Création des catégories
         Categorie c1 = new Categorie("Ordinateurs");
@@ -14,7 +14,7 @@ public class Application {
         Categorie c5 = new Categorie("Ecrans");
 
         // Création des articles
-        Article tabArticles[] = new Article[11];
+        Article[] tabArticles = new Article[11];
         tabArticles[0] = new Article("HP EliteBook 840 G3", 1200, c1);
         tabArticles[1] = new Article("HP EliteBook 840 G4", 1300, c1);
         tabArticles[2] = new Article("Google Pixel 4a 4G", 699, c2);
