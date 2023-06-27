@@ -28,27 +28,31 @@ public class Application {
         tabArticles[10] = new Article("HP 27fw FullScreen", 199, c5);
 
         // Affichage des articles
+        System.out.println("Bloc de code N° 1 ----------------------------------");
         System.out.println("Liste des articles avec le détail des prix:");
         for (int i = 0; i < tabArticles.length; i++) {
             System.out.println(tabArticles[i]);
         }
 
-        System.out.println("----------------------------------------------");
+        System.out.println("Bloc de code N° 2 ----------------------------------");
+        System.out.println("Ajout d'un article:");
 
         // Ajout d'un article
         Article a1 = new Article("HP EliteBook 840 G5", 1400, c1);
         tabArticles[11] = a1;
 
+        System.out.println("Bloc de code N° 3 ----------------------------------");
+
         // Suppression d'un article
         tabArticles[10] = null;
-
+        
         // Affichage des articles
         System.out.println("Liste des articles avec uniquement la désignation:");
         for (int i = 0; i < tabArticles.length; i++) {
             System.out.println(tabArticles[i].getDesignation());
         }
 
-        System.out.println("----------------------------------------------");
+        System.out.println("Bloc de code N° 4 ----------------------------------");
 
         // Affichage des articles de la catégorie Ordinateurs
         System.out.println("Liste des articles de la catégorie Ordinateurs:");
@@ -59,8 +63,6 @@ public class Application {
                 }
             }
         }
-
-        System.out.println("----------------------------------------------");
 
     }
 }
